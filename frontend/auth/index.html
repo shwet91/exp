@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: #FBEAEB;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+           
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .top{
+           
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .container button{
+            height: 50px;
+            background-color: #4caf50;
+            width: 50%;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .container button:hover {
+            background-color: #45a049;
+        }
+        .img{
+            background-image: url(login/social-2029117_1280.png);
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+        }
+        button a {
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="top">
+                <div class="img"></div>
+                <h1>Welcome to my project</h1>
+            </div>
+            <button id="myButton">Get started</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
