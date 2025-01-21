@@ -3,10 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #FBEAEB;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     margin: 0;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 15px;
 }
 
 .signup-form {
@@ -114,4 +117,47 @@ body {
     width: 50%;
 }
 
+.loader{
+    margin-top: 15px;
+    background-image: url('mg.png') ;
+    background-size: cover;
+    animation: spin 2s linear infinite;
+    height: 60px;
+    width: 60px;
+    /* border: 2px solid black; */
+}
 
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.box1{
+    position: relative;
+    background-color: #4caf50;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+   
+}
+
+  .messageTrue::before {
+    content: "Success fully signed up !!";
+    color: rgb(255, 255, 255);
+  }
+
+  .messageFalse::before {
+    content: "Some error occured plz try later !!";
+    color: rgb(255, 255, 255);
+  }
+
+  .alreadyExist::before {
+    content: "user already exist !!";
+    color: rgb(255, 255, 255);
+  }
